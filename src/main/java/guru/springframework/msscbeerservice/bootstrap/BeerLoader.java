@@ -33,31 +33,31 @@ public class BeerLoader implements CommandLineRunner {
     }
     private void loadBeerObjects() {
         Beer b1 = Beer.builder()
-                .beerName("Mango Bobs")
-                .beerStyle("IPA")
-                .minOnHand(12)
-                .quantityToBrew(200)
-                .price(new BigDecimal("12.95"))
-                .upc(BEER_1_UPC)
-                .build();
+                               .beerName("Mango Bobs")
+                               .beerStyle("IPA")
+                               .minOnHand(12)
+                               .quantityToBrew(200)
+                               .price(new BigDecimal("12.95"))
+                               .upc(BEER_1_UPC)
+                               .build();
 
         Beer b2 = Beer.builder()
-                .beerName("Galaxy Cat")
-                .beerStyle("PALE_ALE")
-                .minOnHand(12)
-                .quantityToBrew(200)
-                .price(new BigDecimal("12.95"))
-                .upc(BEER_2_UPC)
-                .build();
+                               .beerName("Galaxy Cat")
+                               .beerStyle("PALE_ALE")
+                               .minOnHand(12)
+                               .quantityToBrew(200)
+                               .price(new BigDecimal("12.95"))
+                               .upc(BEER_2_UPC)
+                               .build();
 
         Beer b3 = Beer.builder()
-                .beerName("Pinball Porter")
-                .beerStyle("PALE_ALE")
-                .minOnHand(12)
-                .quantityToBrew(200)
-                .price(new BigDecimal("12.95"))
-                .upc(BEER_3_UPC)
-                .build();
+                               .beerName("Pinball Porter")
+                               .beerStyle("PALE_ALE")
+                               .minOnHand(12)
+                               .quantityToBrew(200)
+                               .price(new BigDecimal("12.95"))
+                               .upc(BEER_3_UPC)
+                               .build();
 
         beerRepository.save(b1);
         beerRepository.save(b2);
